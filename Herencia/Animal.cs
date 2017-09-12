@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Herencia
 {
-    class Animal
+   public class Animal
     {
         protected int idAnimal { get; set; }
         protected String nombreCientifico { get; set; }
