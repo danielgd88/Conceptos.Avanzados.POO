@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D486CF9F-B693-40BC-B23B-8F06438C67DF}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{24E54833-A72B-4979-BC8D-0DC640A0C3A4}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Principal</RootNamespace>
-    <AssemblyName>Principal</AssemblyName>
+    <RootNamespace>Abstraccion</RootNamespace>
+    <AssemblyName>Abstraccion</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,29 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Animal.cs" />
+    <Compile Include="Perro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Abstraccion\Abstraccion.csproj">
-      <Project>{24e54833-a72b-4979-bc8d-0dc640a0c3a4}</Project>
-      <Name>Abstraccion</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Herencia\Herencia.csproj">
-      <Project>{0f4df57e-c959-48df-9f54-66d6cdf8a543}</Project>
-      <Name>Herencia</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Interface\Interface.csproj">
-      <Project>{4f54b14d-7163-4416-a321-334e231c8b7f}</Project>
-      <Name>Interface</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Polimorfismo\Polimorfismo.csproj">
-      <Project>{30e532f1-6c66-4ec1-8462-63876f4fc49d}</Project>
-      <Name>Polimorfismo</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

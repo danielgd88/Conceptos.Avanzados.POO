@@ -11,23 +11,14 @@ namespace Herencia
         protected int idAnimal { get; set; }
         protected String nombreCientifico { get; set; }
         protected DateTime horaRegistro { get; set; }
-
-
         protected Genero generoAnimal { get; set; }
         protected PropiedadesAnimal propiedadesAnimal { get; set; }
-
-
-        public virtual void sonido()
-        {
-
-        }
-
         public override string ToString()
         {
             return "Nombre cientifico: " + nombreCientifico + Environment.NewLine +
                    "Hora de registro: " + horaRegistro.ToShortDateString() + Environment.NewLine +
-                   "========================================================================" +
-                   "========================================================================" +
+                   "========================================================================" + Environment.NewLine+
+                   "========================================================================" + Environment.NewLine+
                    "% Agua: " + this.propiedadesAnimal.porcentajeAgua + Environment.NewLine +
                    "% Grasa: " + this.propiedadesAnimal.porcentajeGrasa;
         }
